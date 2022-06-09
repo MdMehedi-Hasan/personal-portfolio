@@ -1,0 +1,8 @@
+.gridCols{
+    grid-template-columns: 11fr 1fr;
+}
+.backgroundImage{
+    background-image: url("../images/wave-haikei.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
