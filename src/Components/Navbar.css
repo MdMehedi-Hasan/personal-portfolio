@@ -6,3 +6,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.white{
+    border: 2px solid #00B890;
+}
+.white:hover{
+    background-color: #00B890;
+}
+.hide-scrolbar{
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hide-scrolbar::-webkit-scrollbar {
+    display: none;
+}
