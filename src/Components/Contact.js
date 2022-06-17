@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div>
-            <div className="container mx-auto">
+        <div className='border h-screen flex items-center'>
+            <div className="container border">
                 <h1 className='text-white text-6xl border-b-2 mb-6 inline-block'>Contact me</h1>
                 <form target="_blank" action="https://formsubmit.co/761204c45454f3918b27b86c7af523d0" method="POST">
                     <div className="form-group">

@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react';
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -10,10 +11,13 @@ const Projects = () => {
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
-    console.log(projects);
+    const navigate = useNavigate();
+    const redirect = (id) => {
+        navigate(`/projects/${id}`)
+    }
     return (
         <div className='grid grid-cols-3'>
-            {projects.map(project => <div key={project.id} className="card mt-3 w-96 bg-base-100 shadow-xl bg-slate-800 text-white">
+            {projects.map(project => <div key={project.id} className="card mt-3 w-96 shadow-xl bg-slate-800 text-white">
                 <figure><img className='h-56' src={project.image} alt="Shoes" /></figure>
                 <div className="card-body">
                     <div className="card-actions justify-start">
@@ -22,7 +26,7 @@ const Projects = () => {
                     <h2 className="card-title">
                         {project.title}
                     </h2>
-                    <p>{project.description.slice(0,200)} <button className="badge">See more &nbsp;<Icon icon="ci:thin-big-right" /></button></p>
+                    <p>{project.description.slice(0,200)} <button className="badge" onClick={()=>redirect(project.id)}>See more &nbsp;<Icon className='text-xl' icon="ci:small-long-right" /></button></p>
                     <div className="card-actions justify-center">
                         <a href="https://www.google.com/search?q=website+icon&sxsrf=ALiCzsYUNkztV1w0KZMuEq7nGUb2Sw15xQ:1655438723214&source=lnms&tbm=isch&sa=X&ved=2ahUKEwigq63ozbP4AhWZ6nMBHVpxC64Q_AUoAXoECAEQAw&biw=1280&bih=657&dpr=1" rel='noreferrer' target="_blank"><button className="text-3xl border rounded-full p-2 mt-8 hover:bg-accent hover:text-white"><Icon icon="mdi:web" /></button></a>
                         <a href="https://www.google.com/search?q=website+icon&sxsrf=ALiCzsYUNkztV1w0KZMuEq7nGUb2Sw15xQ:1655438723214&source=lnms&tbm=isch&sa=X&ved=2ahUKEwigq63ozbP4AhWZ6nMBHVpxC64Q_AUoAXoECAEQAw&biw=1280&bih=657&dpr=1" rel='noreferrer' target="_blank"><button className="text-3xl border rounded-full p-2 mt-8 hover:bg-accent hover:text-white"><Icon icon="akar-icons:github-fill" /></button></a>
