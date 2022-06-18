@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="w-full drawer-content backgroundImage hide-scrolbar">
                 {/* <!-- Page content here --> */}
                 <Outlet></Outlet>
-                <label htmlFor="my-drawer-2" className="btn btn-circle swap swap-rotate lg:hidden">
+                <label htmlFor="my-drawer-2" className="btn btn-circle swap swap-rotate lg:hidden absolute top-5 right-5">
                     <input type="checkbox" />
 
                     {/* <!-- hamburger icon --> */}
