@@ -9,7 +9,7 @@ import Projects from "./Components/Projects";
 
 function App() {
   return (
-    <div>
+    <div className="dark">
       
       <Routes>
         <Route path="/" element={<Navbar></Navbar>}>
