@@ -19,7 +19,7 @@ const ProjectCards = () => {
             <div className={`grid lg:grid-cols-2 gap-x-16 ${location.pathname =='/projects' && 'lg:mt-[-350px] lg:mx-20'} lg:mx-10 mx-2 border-b-2 border-dotted border-[#114c67aa] pb-12`}>
                 {projects.map(project =>
                     <div key={project.id} className="card lg:mt-20 mb-20 lg:mb-0 shadow-2xl bg-[#114c67aa] text-white">
-                        <figure><img className='h-56 w-full' src={project.image} alt="Shoes" /></figure>
+                        <figure><img className='h-80 w-full' src={project.image} alt="Shoes" /></figure>
                         <div className="card-body">
                             <div className="card-actions justify-start">
                                 {project.tech.map(badge => <div key={badge} className="badge badge-outline">{badge}</div>)}
@@ -27,7 +27,7 @@ const ProjectCards = () => {
                             <h2 className="card-title">
                                 {project.title}
                             </h2>
-                            <p>{project.description.slice(0, 200)} <button className="badge" onClick={() => redirect(project.id)}>See more &nbsp;<Icon className='text-xl' icon="ci:small-long-right" /></button></p>
+                            <p>{project.description.slice(0, 200)} <button className="badge bg-cyan-600" onClick={() => redirect(project.id)}>See more &nbsp;<Icon className='text-xl' icon="ci:small-long-right" /></button></p>
                             <div className="card-actions justify-center">
                                 <a href="https://www.google.com/search?q=website+icon&sxsrf=ALiCzsYUNkztV1w0KZMuEq7nGUb2Sw15xQ:1655438723214&source=lnms&tbm=isch&sa=X&ved=2ahUKEwigq63ozbP4AhWZ6nMBHVpxC64Q_AUoAXoECAEQAw&biw=1280&bih=657&dpr=1" rel='noreferrer' target="_blank"><button className="text-2xl border border-accent rounded-full p-2 mt-8 hover:bg-accent mr-2 hover:text-white tooltip" data-tip="Live site"><Icon icon="mdi:web" /></button></a>
                                 <a href="https://www.google.com/search?q=website+icon&sxsrf=ALiCzsYUNkztV1w0KZMuEq7nGUb2Sw15xQ:1655438723214&source=lnms&tbm=isch&sa=X&ved=2ahUKEwigq63ozbP4AhWZ6nMBHVpxC64Q_AUoAXoECAEQAw&biw=1280&bih=657&dpr=1" rel='noreferrer' target="_blank"><button className="text-2xl border border-accent rounded-full p-2 mt-8 hover:bg-accent hover:text-white tooltip" data-tip="Github"><Icon icon="akar-icons:github-fill" /></button></a>

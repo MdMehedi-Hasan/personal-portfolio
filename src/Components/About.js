@@ -6,8 +6,10 @@ import { Link } from 'react-router-dom';
 import './About.css'
 import Footer from './Footer';
 import ProjectCards from './ProjectCards';
+import Typewriter from 'typewriter-effect';
 
 const About = () => {
+
     return (
         <div className='text-white'>
             <section className=''>
@@ -23,7 +25,13 @@ const About = () => {
                         </div>
                     </div>
                     <h1 className='text-center mt-6 font-serif font-semibold text-lg'>Md. Mehedi Hasan</h1>
-                    <p className='text-center my-5'>I am a web developer</p>
+                    <p className='text-center my-5 flex justify-center'>I am a&nbsp; <Typewriter
+                        options={{
+                            strings: ['web developer', 'UI designer','bug fixer'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    /></p>
                     <div className='border-y-2 border-dotted w-11/12 h-24 mx-auto flex justify-center items-center mb-10 mt-5'>
                         <a className='mr-5' href="https://www.linkedin.com/in/mehedi-hasan-6127b3174/" rel="noreferrer" target="_blank"><Icon icon="akar-icons:linkedin-box-fill" /></a>
                         <a className='mr-5' href="https://github.com/MdMehedi-Hasan" rel="noreferrer" target="_blank"><Icon icon="akar-icons:github-fill" /></a>
@@ -117,10 +125,10 @@ const About = () => {
                 </div>
             </section>
             <section>
-            <div className='flex items-center justify-between mx-2 lg:mx-10 mt-28'>
-                        <h1 className='lg:text-4xl text-xl text-white'>Some of my recent projects</h1>
-                        <div className='lg:w-7/12 w-1/4 h-6 border-b-2 border-cyan-900 border-dotted'></div>
-                    </div>
+                <div className='flex items-center justify-between mx-2 lg:mx-10 mt-28'>
+                    <h1 className='lg:text-4xl text-xl text-white'>Some of my recent projects</h1>
+                    <div className='lg:w-7/12 w-1/4 h-6 border-b-2 border-cyan-900 border-dotted'></div>
+                </div>
                 <ProjectCards></ProjectCards>
             </section>
             <Footer></Footer>

@@ -1,29 +1,29 @@
 [
     {
       "id":"1",
-      "image": "https://i.ibb.co/c19x8Pd/11.png",
+      "image": ["https://i.ibb.co/k1pCYNk/wrench1.png","https://i.ibb.co/7vjsKMk/wrench2.png","https://i.ibb.co/wMsnTGK/wrench3.png","https://i.ibb.co/C8XYqjT/wrench4.png","https://i.ibb.co/6mNJmX7/wrench5.png","https://i.ibb.co/N9Y37Bt/wrench6.png"],
       "tech":["React","Node.js","MongoDB","Firebase","Stripe","Tailwind","DaisyUI"],
       "title": "Beverley Hebert",
       "description": "Laborum Lorem irure in sunt mollit nulla ad eu voluptate. Laboris eiusmod aliqua ullamco ea ea officia culpa labore elit Lorem non consectetur occaecat. Anim nulla nostrud amet id duis id consectetur. Aute adipisicing eu anim ullamco ad adipisicing nulla proident. In in et occaecat ea labore Lorem. Labore occaecat esse irure sit anim anim sint quis quis proident exercitation nisi nisi ad. Non enim veniam cillum duis labore ut proident labore.\r\n"
     },
     {
       "id":"2",
-      "image": "https://i.ibb.co/hHyjdJC/screencapture-full-stack-project-f685e-web-app-2022-06-17-06-40-36.png",
-      "tech":["React","Node.js","MongoDB","Firebase","Stripe","Tailwind","DaisyUI"],
+      "image": ["https://i.ibb.co/tZWDJkh/east2.png","https://i.ibb.co/q7fg1jQ/east3.png","https://i.ibb.co/Vqh0ncd/east4.png","https://i.ibb.co/JkDjLcV/east1.png","https://i.ibb.co/x6xhTsT/east7.png","https://i.ibb.co/mb22p0n/east5.png","https://i.ibb.co/KNBYVBB/east6.png"],
+      "tech":["React","Node.js","MongoDB","Firebase","Bootstrap"],
       "title": "Beverley Hebert",
       "description": "Laborum Lorem irure in sunt mollit nulla ad eu voluptate. Laboris eiusmod aliqua ullamco ea ea officia culpa labore elit Lorem non consectetur occaecat. Anim nulla nostrud amet id duis id consectetur. Aute adipisicing eu anim ullamco ad adipisicing nulla proident. In in et occaecat ea labore Lorem. Labore occaecat esse irure sit anim anim sint quis quis proident exercitation nisi nisi ad. Non enim veniam cillum duis labore ut proident labore.\r\n"
     },
     {
       "id":"3",
-      "image": "https://i.ibb.co/hHyjdJC/screencapture-full-stack-project-f685e-web-app-2022-06-17-06-40-36.png",
-      "tech":["React","Node.js","MongoDB","Firebase","Stripe","Tailwind","DaisyUI"],
+      "image": ["https://i.ibb.co/RhBQsVq/in1.png","https://i.ibb.co/Yt40LSj/in2.png","https://i.ibb.co/D9NrYzx/in3.png","https://i.ibb.co/5s4fSLc/in4.png"],
+      "tech":["Bootstrap"],
       "title": "Beverley Hebert",
       "description": "Laborum Lorem irure in sunt mollit nulla ad eu voluptate. Laboris eiusmod aliqua ullamco ea ea officia culpa labore elit Lorem non consectetur occaecat. Anim nulla nostrud amet id duis id consectetur. Aute adipisicing eu anim ullamco ad adipisicing nulla proident. In in et occaecat ea labore Lorem. Labore occaecat esse irure sit anim anim sint quis quis proident exercitation nisi nisi ad. Non enim veniam cillum duis labore ut proident labore.\r\n"
     },
     {
       "id":"4",
-      "image": "https://i.ibb.co/hHyjdJC/screencapture-full-stack-project-f685e-web-app-2022-06-17-06-40-36.png",
-      "tech":["React","Node.js","MongoDB","Firebase","Stripe","Tailwind","DaisyUI"],
+      "image": ["https://i.ibb.co/8D3Ztc0/dentist1.png","https://i.ibb.co/gF22PQT/dentist2.png","https://i.ibb.co/JBQwDTw/dentist3.png","https://i.ibb.co/3v8PGQ2/dentist4.png","https://i.ibb.co/qBYm260/dentist5.png","https://i.ibb.co/S6mP7Mt/dentist6.png"],
+      "tech":["React","Bootstrap","Firebase"],
       "title": "Beverley Hebert",
       "description": "Laborum Lorem irure in sunt mollit nulla ad eu voluptate. Laboris eiusmod aliqua ullamco ea ea officia culpa labore elit Lorem non consectetur occaecat. Anim nulla nostrud amet id duis id consectetur. Aute adipisicing eu anim ullamco ad adipisicing nulla proident. In in et occaecat ea labore Lorem. Labore occaecat esse irure sit anim anim sint quis quis proident exercitation nisi nisi ad. Non enim veniam cillum duis labore ut proident labore.\r\n"
     }
