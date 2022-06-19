@@ -1,3 +1,5 @@
-.grid-cols-1fr-2fr{
-    grid-template-columns: 4fr 8fr;
+@media screen and (min-width:1024px) {
+    .grid-cols-1fr-2fr{
+        grid-template-columns: 4fr 8fr;
+    }
 }
