@@ -11,7 +11,6 @@ const ProjectDetails = () => {
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
-    console.log(projects);
     return (
         <div className='mt-10 text-white'>
             {projects.map(project => project.id.includes(id) &&
@@ -19,7 +18,8 @@ const ProjectDetails = () => {
                     <div className="card rounded-sm h-fit shadow-xl grid grid-cols-2 lg:gap-10 gap-5">
                         {project.image.map(picture => <figure><img src={picture} alt="Shoes" className='hover:scale-150 duration-300' /></figure>)}
                     </div>
-                    <div className='border-dotted border-cyan-700 lg:border-l-2 lg:ml-5 mt-5 lg:pl-5'>
+                    {console.log(project.github.length)}
+                    <div className='border-dotted border-cyan-700 lg:border-l-2 lg:ml-5 mt-5 lg:mt-0 lg:pl-5'>
                         <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Title:</b> {project.title}</p>
                         <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Live website:</b> <a href={project.live} target="_blank" rel="noopener noreferrer">Click here to visit live website</a></p>
                         <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Client site code:</b><a href={project.github[0]} target="_blank" rel="noopener noreferrer"> Click here to visit client site code</a></p>

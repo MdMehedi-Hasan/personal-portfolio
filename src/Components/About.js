@@ -48,9 +48,9 @@ const About = () => {
                 </aside>
                 <div>
                     <div className='grid lg:grid-cols-3 text-center lg:text-left gap-5 h-36'>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>120+</span></div> <span className='mt-5'>Total projects</span></div>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>120+</span></div><span className='mt-5'>Full stack projects</span></div>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>120+</span></div><span className='mt-5'>Full stack projects</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>12+</span></div> <span className='mt-5 font-semibold'>Total projects</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>02</span></div><span className='mt-5 font-semibold'>Full stack projects</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>30+</span></div><span className='mt-5 font-semibold'>Repositories</span></div>
                     </div>
                     <div className="mt-40">
                         <div className='flex items-center'>

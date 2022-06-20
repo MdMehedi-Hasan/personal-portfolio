@@ -14,7 +14,7 @@ const Projects = () => {
                     <p className='border w-44 lg:w-48 rounded-full p-2 text-center text-white lg:text-xl text-lg lg:mt-12 mt-6 font-sans'>Most recent works</p>
                 </div>
             </div>
-            <div className='px-10'>
+            <div className='px-10 lg:px-0'>
             <ProjectCards></ProjectCards>
             </div>
             <div className='mx-20'>
