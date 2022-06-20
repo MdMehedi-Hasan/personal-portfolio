@@ -11,19 +11,22 @@ const ProjectDetails = () => {
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
-    // projects.map(project => project.id.includes(id) && setSigleProject(project))
-    // console.log(singleProject);
+    console.log(projects);
     return (
-        <div className='mt-10'>
+        <div className='mt-10 text-white'>
             {projects.map(project => project.id.includes(id) &&
-                <section className='grid grid-cols-2 h-48'>
-                    <div className='w-96 h-96 grid grid-cols-2 gap-4 mx-auto border-r-2 border-dotted pr-36'>
-                        <img className='w-48 h-48 mb-4' src={project.image} alt="" />
-                        <img className='w-48 h-48 mb-4' src={project.image} alt="" />
-                        <img className='w-48 h-48 mb-4' src={project.image} alt="" />
-                        <img className='w-48 h-48 mb-4' src={project.image} alt="" />
+                <section className='grid lg:grid-cols-2 lg:mx-10 mx-5'>
+                    <div className="card rounded-sm h-fit shadow-xl grid grid-cols-2 lg:gap-10 gap-5">
+                        {project.image.map(picture => <figure><img src={picture} alt="Shoes" className='hover:scale-150 duration-300' /></figure>)}
                     </div>
-                    <div><p>{project.description}</p></div>
+                    <div className='border-dotted border-cyan-700 lg:border-l-2 lg:ml-5 mt-5 lg:pl-5'>
+                        <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Title:</b> {project.title}</p>
+                        <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Live website:</b> <a href={project.live} target="_blank" rel="noopener noreferrer">Click here to visit live website</a></p>
+                        <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Client site code:</b><a href={project.github[0]} target="_blank" rel="noopener noreferrer"> Click here to visit client site code</a></p>
+                        {project.github.length > 1 && <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Server site code:</b><a href={project.github[1]} target="_blank" rel="noopener noreferrer"> Click here to visit server site code</a></p>}
+                        <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Technologies used:</b> {project.tech.map(tec => <span>{tec}, &nbsp;</span>)}</p>
+                        <p className='text-lg mb-5 leading-10 font-sans'><b className='text-xl font-serif'>Project details:</b> {project.description}</p>
+                    </div>
                 </section>
             )}
         </div>
