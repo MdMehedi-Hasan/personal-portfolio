@@ -108,7 +108,7 @@ const About = () => {
                         <h1 className='text-4xl text-white'>About me</h1>
                         <div className='w-8/12 h-6 border-b-2 border-cyan-900 border-dotted'></div>
                     </div>
-                    <p className='mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia quam, at molestiae fuga debitis repellendus recusandae veritatis, facilis unde accusantium ex sit reprehenderit nostrum quasi perferendis rerum a. Maiores?</p>
+                    <p className='mt-10'>Hello there, I am Md. Mehedi Hasan. I am a full stack web developer. I have the necessary skills to create professional full stack projects. I build user interface with React, Bootstrap, Tailwind, DaisyUI, Firebase. For backend integration I use Node.js, Express.js &amp; MongoDB. I can do awesome animation which are production ready. I am always open to explore new technologies. </p>
                 </div>
                 <div>
                     <div className='flex items-center justify-between'>
