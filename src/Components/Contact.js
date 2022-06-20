@@ -1,10 +1,14 @@
 import React from 'react';
+import image from '../images/wave.png'
 
 const Contact = () => {
     return (
-        <div className='border h-screen flex items-center'>
-            <div className="container border">
-                <h1 className='text-white text-6xl border-b-2 mb-6 inline-block'>Contact me</h1>
+        <div className="card rounded-none h-screen image-full">
+        <figure><img width='100%' src={image} alt="Shoes" /></figure>
+        <div className="card-body p-0">
+        <div className='h-screen flex items-center justify-center'>
+            <div className="container lg:w-fit w-auto">
+                <h1 className='text-white lg:text-6xl text-5xl border-b-2 mb-6 inline-block'>Contact me</h1>
                 <form target="_blank" action="https://formsubmit.co/761204c45454f3918b27b86c7af523d0" method="POST">
                     <div className="form-group">
                         <div className="form-row">
@@ -23,6 +27,8 @@ const Contact = () => {
                 </form>
             </div>
         </div>
+        </div>
+      </div>
     );
 };
 
