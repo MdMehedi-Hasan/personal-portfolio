@@ -29,8 +29,8 @@ const ProjectCards = () => {
                             </h2>
                             <p>{project.description.slice(0, 200)} <button className="badge bg-cyan-600" onClick={() => redirect(project.id)}>See more &nbsp;<Icon className='text-xl' icon="ci:small-long-right" /></button></p>
                             <div className="card-actions justify-center">
-                                <a href="https://www.google.com/search?q=website+icon&sxsrf=ALiCzsYUNkztV1w0KZMuEq7nGUb2Sw15xQ:1655438723214&source=lnms&tbm=isch&sa=X&ved=2ahUKEwigq63ozbP4AhWZ6nMBHVpxC64Q_AUoAXoECAEQAw&biw=1280&bih=657&dpr=1" rel='noreferrer' target="_blank"><button className="text-2xl border border-accent rounded-full p-2 mt-8 hover:bg-accent mr-2 hover:text-white tooltip" data-tip="Live site"><Icon icon="mdi:web" /></button></a>
-                                <a href="https://www.google.com/search?q=website+icon&sxsrf=ALiCzsYUNkztV1w0KZMuEq7nGUb2Sw15xQ:1655438723214&source=lnms&tbm=isch&sa=X&ved=2ahUKEwigq63ozbP4AhWZ6nMBHVpxC64Q_AUoAXoECAEQAw&biw=1280&bih=657&dpr=1" rel='noreferrer' target="_blank"><button className="text-2xl border border-accent rounded-full p-2 mt-8 hover:bg-accent hover:text-white tooltip" data-tip="Github"><Icon icon="akar-icons:github-fill" /></button></a>
+                                <a href={project.live} rel='noreferrer' target="_blank"><button className="text-2xl border border-accent rounded-full p-2 mt-8 hover:bg-accent mr-2 hover:text-white tooltip" data-tip="Live site"><Icon icon="mdi:web" /></button></a>
+                                <a href={project.github[0]} rel='noreferrer' target="_blank"><button className="text-2xl border border-accent rounded-full p-2 mt-8 hover:bg-accent hover:text-white tooltip" data-tip="Github"><Icon icon="akar-icons:github-fill" /></button></a>
                             </div>
                         </div>
                     </div>)}
