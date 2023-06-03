@@ -27,7 +27,7 @@ const About = () => {
                     <h1 className='text-center mt-6 font-serif font-semibold text-lg'>Md. Mehedi Hasan</h1>
                     <p className='text-center my-5 flex justify-center'>I am a&nbsp; <Typewriter
                         options={{
-                            strings: ['web developer', 'UI designer','bug fixer'],
+                            strings: ['Front-end developer', 'MERN stack enthusiast', 'Bug fixer.'],
                             autoStart: true,
                             loop: true,
                         }}
@@ -41,16 +41,16 @@ const About = () => {
                     <div className=' w-11/12 mx-auto pb-10 mb-10 border-b-2 border-dotted'>
                         <div className='flex items-center mb-2 justify-between'><span className='font-bold font-mono'>Country:</span><span>Bangladesh</span></div>
                         <div className='flex items-center mb-2 justify-between'><span className='font-bold font-mono'>City:</span><span>Dhaka</span></div>
-                        <div className='flex items-center mb-2 justify-between'><span className='font-bold font-mono'>Email:</span><small className='text-right'>mehedihasan. webdev @ gmail. com</small></div>
+                        <div className='flex items-center mb-2 justify-between'><span className='font-bold font-mono'>Email:</span><small className='text-right'>mdmehedihasan9874@gmail.com</small></div>
                         <div className='flex items-center justify-between'><span className='font-bold font-mono'>Phone:</span><span>+8801320676252</span></div>
                     </div>
                     <Link to="/contact" className='flex justify-center mt-5 text-lg'><button className='flex items-center border px-4 py-2 rounded-full'><span className='mr-2'>Contact me</span> <Icon icon="eva:email-fill" /></button></Link>
                 </aside>
                 <div>
                     <div className='grid lg:grid-cols-3 text-center lg:text-left gap-5 h-36'>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>12+</span></div> <span className='mt-5 font-semibold'>Total projects</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>16+</span></div> <span className='mt-5 font-semibold'>Total projects</span></div>
                         <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>02</span></div><span className='mt-5 font-semibold'>Full stack projects</span></div>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>30+</span></div><span className='mt-5 font-semibold'>Repositories</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>50+</span></div><span className='mt-5 font-semibold'>Repositories</span></div>
                     </div>
                     <div className="mt-40">
                         <div className='flex items-center'>
@@ -108,7 +108,11 @@ const About = () => {
                         <h1 className='text-4xl text-white'>About me</h1>
                         <div className='w-8/12 h-6 border-b-2 border-cyan-900 border-dotted'></div>
                     </div>
-                    <p className='mt-10'>Hello there, I am Md. Mehedi Hasan. I am a full stack web developer. I have the necessary skills to create professional full stack projects. I build user interface with React, Bootstrap, Tailwind, DaisyUI, Firebase. For backend integration I use Node.js, Express.js &amp; MongoDB. I can do awesome animation which are production ready. I am always open to explore new technologies. </p>
+                    {/* <p className='mt-10'>Hello there, I am Md. Mehedi Hasan. I am a full stack web developer. I have the necessary skills to create professional full stack projects. I build user interface with React, Bootstrap, Tailwind, DaisyUI, Firebase. For backend integration I use Node.js, Express.js &amp; MongoDB. I can do awesome animation which are production ready. I am always open to explore new technologies. </p> */}
+                    <p className='mt-10 text-justify'>Hi there! I'm Md. Mehedi Hasan a passionate front-end developer with a knack for creating engaging and intuitive web experiences. I love the intersection of design and technology, and I thrive on crafting pixel-perfect interfaces that bring ideas to life.
+                    <br /><br />
+                    With 2<sup>+</sup> years of experience in front-end development, I have honed my skills in HTML, CSS, and JavaScript to build responsive and visually appealing websites. I am well-versed in modern frameworks like React and Vue.js,leveraging their power to create dynamic and interactive user interfaces. I also have a strong understanding of web accessibility standards, ensuring that my code is inclusive and usable for all users.
+                    </p>
                 </div>
                 <div>
                     <div className='flex items-center justify-between'>
