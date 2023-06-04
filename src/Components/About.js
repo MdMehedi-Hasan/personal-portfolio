@@ -13,11 +13,11 @@ const About = () => {
     return (
         <div className='text-white'>
             <section className=''>
-                <img className='' src={image} alt="" />
+                <img className='w-full' src={image} alt="" />
                 {/* <h1 className='text-4xl text-white text-center'>Hey mate! Welcome to my portfolio.</h1>
                 <p className='text-xl text-white text-center'>Learn more about me</p> */}
             </section>
-            <section className='text-white grid gap-16 grid-cols-1fr-2fr lg:mx-10 mx-2 lg:mt-[-180px]'>
+            <section className='container mx-auto text-white grid gap-16 grid-cols-1fr-2fr lg:mt-[-180px]'>
                 <aside className=' py-10 h-fit border-2 rounded-2xl lg:mt-[-250px] bg-cyan-900 border-cyan-900'>
                     <div className="avatar flex justify-center">
                         <div className="w-24 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
@@ -48,9 +48,9 @@ const About = () => {
                 </aside>
                 <div>
                     <div className='grid lg:grid-cols-3 text-center lg:text-left gap-5 h-36'>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>16+</span></div> <span className='mt-5 font-semibold'>Total projects</span></div>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>02</span></div><span className='mt-5 font-semibold'>Full stack projects</span></div>
-                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>50+</span></div><span className='mt-5 font-semibold'>Repositories</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center text-xl md:text-3xl lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>16+</span></div> <span className='mt-5 font-semibold'>Total projects</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center text-xl md:text-3xl lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>02</span></div><span className='mt-5 font-semibold'>Full stack projects</span></div>
+                        <div className='border border-cyan-700 shadow-2xl flex flex-col lg:pl-5 justify-center rounded-xl bg-cyan-900'><div className='flex items-center lg:justify-start justify-center text-xl md:text-3xl lg:text-4xl'><Icon icon="ic:twotone-developer-mode" /><span>50+</span></div><span className='mt-5 font-semibold'>Repositories</span></div>
                     </div>
                     <div className="mt-40">
                         <div className='flex items-center'>
@@ -102,7 +102,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='grid lg:grid-cols-2 gap-14 lg:mx-10 mx-2 mt-28'>
+            <section className='container grid lg:grid-cols-2 gap-14 mx-auto mt-28'>{/* lg:mx-10 mx-2 */}
                 <div className='h-fit'>
                     <div className='flex items-center justify-between'>
                         <h1 className='text-4xl text-white'>About me</h1>
@@ -128,7 +128,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className='container mx-auto'>
                 <div className='flex items-center justify-between mx-2 lg:mx-10 mt-28'>
                     <h1 className='lg:text-4xl text-xl text-white'>Some of my recent projects</h1>
                     <div className='lg:w-7/12 w-1/4 h-6 border-b-2 border-cyan-900 border-dotted'></div>

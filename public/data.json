@@ -6,7 +6,7 @@
       "title": "Wrench & screw (Manufacturing company)",
       "description": "Wrench & screw is a website based on tools manufacturing company. This is a full-stack project with both user & admin functionalities. For client side React, Tailwind, DaisyUI, Firebase, Stripe, React router are used. And for backend we used Nodejs, Expressjs & MongoDB. Any particular user can see all products, available quantity,minimum order quantity, customers review etc by visiting this website. User can place an order & also he/she can payment for that product online (Card payment only). We also have a user dashboard where users can see their orders,add a review & see their profile. They can also edit their profile & pay for unpaid orders in my order section. We implemented another dashboard only for admins. Admin can update product quantity or delete in manage products section, can add a new product, see all the orders placed by client & admin can also make another user as admin.",
       "github":["https://github.com/MdMehedi-Hasan/manufacturing-client","https://github.com/MdMehedi-Hasan/manufacturing-server"],
-      "live":"https://full-stack-project-f685e.web.app/"
+      "live":"https://wrench-and-screw.web.app/"
     },
     {
       "id":"2",
